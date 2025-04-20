@@ -1,0 +1,9 @@
+replicaCount: 1
+
+image:
+  repository: anhhao2004/backend-nestjs
+  tag: latest  # sẽ được Jenkins cập nhật sau mỗi build
+
+service:
+  type: ClusterIP
+  port: 8080

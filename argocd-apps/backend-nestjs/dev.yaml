@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: backend-nestjs-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/nguyen-anh-hao/k8s-instra.git'
+    targetRevision: HEAD
+    path: helm-charts/backend-nestjs
+    helm:
+      valueFiles:
+        - values/dev.yaml
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: backend-nestjs-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
