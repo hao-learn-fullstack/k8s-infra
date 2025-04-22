@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: anhhao2004/frontend-nextjs
+  repository: anhhao2004/nextjs-app
   tag: latest  # sẽ được Jenkins cập nhật sau mỗi build
 
 service:
