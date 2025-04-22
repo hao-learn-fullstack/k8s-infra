@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/nguyen-anh-hao/k8s-instra.git'
+    repoURL: 'https://github.com/hao-learn-fullstack/k8s-infra.git'
     targetRevision: HEAD
     path: helm-charts/frontend-nextjs
     helm:
