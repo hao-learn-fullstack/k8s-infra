@@ -5,9 +5,8 @@ image:
   tag: latest  # sẽ được Jenkins cập nhật sau mỗi build
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 3000
-  nodePort: 30080
 
 ingress:
   enabled: true
